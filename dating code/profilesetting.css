@@ -1,0 +1,261 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.logo h2 {
+    color: #000000;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.menu {
+    list-style: none;
+    width: 100%;
+}
+
+.menu li {
+    margin-bottom: 20px;
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu ui li:nth-child(1) a {
+    background-color: #ffeb3b;
+    color: rgb(0, 0, 0);
+}
+.menu li a:hover {
+    background-color: #ffeb3b;
+    color: white;
+}
+.menu li a i {
+    margin-right: 10px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .logo h2 {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .menu li a {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border-width: 3px;
+    }
+
+    .profile-info h2 {
+        font-size: 20px;
+    }
+
+    .profile-info p {
+        font-size: 14px;
+    }
+
+    .edit-profile {
+        padding: 8px 15px;
+        border-radius: 15px;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ffeb3b;
+}
+
+.profile-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.edit-profile {
+    background-color: #ffeb3b;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.action-btn {
+    background-color: #ffeb3b;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/* Details Section */
+.details-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.tab-btn.active {
+    background-color: #ffeb3b;
+    color: rgb(0, 0, 0);
+}
+
+.details-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.details-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* Looking For Section */
+.looking-for-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.looking-for-section h2 {
+    margin-bottom: 20px;
+}
+
+.preferences label {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.age-options {
+    margin-top: 10px;
+}

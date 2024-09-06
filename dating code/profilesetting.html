@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Dashboard</title>
+    <link rel="stylesheet" href="profilesetting.css">
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <h2>C<i class='bx bx-heart' ></i>llide</h2>
+        </div>
+        <ul class="menu">
+            <li><a href="#"><i class='bx bx-user' ></i>Profile</a></li>
+            <li><a href="#"><i class='bx bx-message-square-detail' ></i>Messages</a></li>
+            <li><a href="#"><i class='bx bx-search-alt' ></i>Favorites</a></li>
+            <li><a href="#"><i class='bx bx-cog' ></i>Settings</a></li>
+            <li><a href="#"><i class='bx bx-lock' ></i>Privacy</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <div class="profile-header">
+                <img src="/img/2289_SkVNQSBGQU1PIDEwMjgtMTIy.jpg" alt="Profile Avatar" class="avatar">
+                <div class="profile-info">
+                    <h2>Harshdeep Singh</h2>
+                    <p>Sylhet, Bangladesh</p>
+                    <p>Male/19</p>
+                    <p>Seeking: No Data</p>
+                    <p>2022-02-03</p>
+                    <button class="edit-profile">Edit Profile</button>
+                </div>
+            </div>
+            <div class="profile-actions">
+                <button class="action-btn"><i class='bx bx-heart' ></i></button>
+                <button class="action-btn"><i class='bx bx-star' ></i></button>
+                <button class="action-btn"><i class='bx bx-comment' ></i></button>
+                <button class="action-btn"><i class='bx bx-camera' ></i></button>
+            </div>
+        </div>
+
+        <!-- Details Section -->
+        <div class="details-section">
+            <div class="tabs">
+                <button class="tab-btn active">Appearance</button>
+                <button class="tab-btn">Personality</button>
+                <button class="tab-btn">Background</button>
+                <button class="tab-btn">Lifestyle</button>
+                <button class="tab-btn">Language</button>
+                <button class="tab-btn">Hobbies</button>
+            </div>
+
+            <table class="details-table">
+                <tr>
+                    <td>Height</td>
+                    <td>142</td>
+                </tr>
+                <tr>
+                    <td>Body Look</td>
+                    <td>Attractive</td>
+                </tr>
+                <tr>
+                    <td>Body Type</td>
+                    <td>42</td>
+                </tr>
+                <tr>
+                    <td>Body Weight</td>
+                    <td>A bit Chubby</td>
+                </tr>
+                <tr>
+                    <td>Disability</td>
+                    <td>Serious Health Issues</td>
+                </tr>
+                <tr>
+                    <td>Ethnicity</td>
+                    <td>Middle Eastern</td>
+                </tr>
+                <tr>
+                    <td>Eye Wear</td>
+                    <td>Glasses</td>
+                </tr>
+                <tr>
+                    <td>Facial Hair</td>
+                    <td>Sideburns</td>
+                </tr>
+                <tr>
+                    <td>Hair Color</td>
+                    <td>Brown</td>
+                </tr>
+                <tr>
+                    <td>Hair Type</td>
+                    <td>Shoulder Length</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Looking For Section -->
+        <div class="looking-for-section">
+            <h2>I'm looking for</h2>
+            <div class="preferences">
+                <label><input type="checkbox"> Man</label>
+                <label><input type="checkbox"> Woman</label>
+                <label><input type="checkbox"> Preferred Age</label>
+                <div class="age-options">
+                    <label><input type="radio" name="age"> 18-20</label>
+                    <label><input type="radio" name="age"> 21-25</label>
+                    <label><input type="radio" name="age"> 26-30</label>
+                    <label><input type="radio" name="age"> 31-35</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
